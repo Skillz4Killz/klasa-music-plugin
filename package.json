@@ -10,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "github:discordjs/discord.js",
-    "klasa": "github:dirigeants/klasa"
+    "ffmpeg-binaries": "^4.0.0",
+    "klasa": "github:dirigeants/klasa",
+    "node-opus": "^0.3.0",
+    "ytdl-core": "^0.21.1"
   },
   "repository": "https://github.com/Tylertron1998/klasa-music-plugin"
 }

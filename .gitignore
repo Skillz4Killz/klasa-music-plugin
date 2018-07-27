@@ -30,3 +30,5 @@ node_modules
 *.xml
 
 \.idea/KlasaMusic\.iml
+
+bot/bwd/
