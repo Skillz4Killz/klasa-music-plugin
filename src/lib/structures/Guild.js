@@ -1,1 +1,0 @@
-const { Structures: { Extend } } = require('discord.js');
