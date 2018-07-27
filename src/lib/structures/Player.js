@@ -6,7 +6,9 @@ class Player {
 		this.client = client;
 		this.queue = [];
 		this.currentlyPlaying = null;
-		this.driver = options.driver || this.client.drivers.default;
+
+		this.driver = client.drivers.get(options.driver || 'Youtube');
+
 	}
 
 	async play(channel, options = {}) {
@@ -30,6 +32,15 @@ class Player {
 			return this.play(member.voiceChannel);
 		} else { return false; }
 	}
+
+	// get driver() {
+	// 	return this.client.drivers.get(this._driver);
+	// }
+	//
+	// set driver(value) {
+	// 	this._driver = value;
+	// 	return value;
+	// }
 
 }
 

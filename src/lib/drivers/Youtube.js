@@ -1,5 +1,5 @@
-const Driver = require('../../src/lib/structures/Driver');
-const Song = require('../../src/lib/structures/Song');
+const Driver = require('../structures/Driver');
+const Song = require('../structures/Song');
 const ytdl = require('ytdl-core');
 
 class YoutubeDriver extends Driver {
@@ -9,7 +9,6 @@ class YoutubeDriver extends Driver {
 	}
 
 	play(channel, song) {
-		console.log(song);
 		return channel.join()
 			.then(connection => {
 				connection.play(ytdl(song.url));
