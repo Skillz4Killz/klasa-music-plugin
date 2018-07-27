@@ -32,3 +32,5 @@ node_modules
 \.idea/KlasaMusic\.iml
 
 bot/bwd/
+
+bot/config\.json

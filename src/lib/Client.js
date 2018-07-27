@@ -19,7 +19,7 @@ class MusicClient extends Client {
 	}
 
 	static defaultVotingMethod(song, member, members) {
-		if(!member.voiceChannel) return false;
+		if (!member.voiceChannel) return false;
 		return (member.voiceChannel.members.size - members.length) >= member.voiceChannel.members.filter(_member => !_member.user.bot).size / 2;
 	}
 
