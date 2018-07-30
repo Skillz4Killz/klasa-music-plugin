@@ -18,12 +18,6 @@ class MusicClient extends Client {
 		this.registerStore(this.drivers);
 	}
 
-	static defaultVotingMethod(song, member, members) {
-		if (!member.voiceChannel) return false;
-		const noBots = member.voiceChannel.members.filter(_member => !_member.bot).size;
-		return (noBots - members.length) >= noBots / 2;
-	}
-
 }
 
 module.exports = MusicClient;
