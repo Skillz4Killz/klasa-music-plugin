@@ -29,8 +29,5 @@ node_modules
 
 *.xml
 
-\.idea/KlasaMusic\.iml
-
-bot/bwd/
-
-bot/config\.json
+*.iml
+*.iml
