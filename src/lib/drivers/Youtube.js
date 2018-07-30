@@ -4,10 +4,6 @@ const ytdl = require('ytdl-core');
 
 class YoutubeDriver extends Driver {
 
-	constructor(...args) {
-		super(...args);
-	}
-
 	play(channel, song) {
 		return channel.join()
 			.then(connection => {

@@ -2,10 +2,6 @@ const { Piece } = require('klasa');
 
 class Driver extends Piece {
 
-	constructor(client, store, file, core, options = {}) {
-		super(client, store, file, core, options = {});
-	}
-
 	play() {
 		throw new Error(`The play method has not been implemented by ${this.type}:${this.name}.`);
 	}

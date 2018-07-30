@@ -28,19 +28,8 @@ class Player {
 	voteSkip(song, member) {
 		const shouldSkip = Client.defaultVotingMethod(this.currentlyPlaying, member, this.currentlyPlaying.votes);
 
-		if (shouldSkip) {
-			return this.play(member.voiceChannel);
-		} else { return false; }
+		return shouldSkip ? this.play(member.voiceChannel) : false;
 	}
-
-	// get driver() {
-	// 	return this.client.drivers.get(this._driver);
-	// }
-	//
-	// set driver(value) {
-	// 	this._driver = value;
-	// 	return value;
-	// }
 
 }
 
