@@ -1,6 +1,6 @@
 {
   "name": "klasa-music-plugin",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A plugin for the Klasa discord.js framework to easily get music up and running.",
   "main": "index.js",
   "scripts": {
