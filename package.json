@@ -12,7 +12,7 @@
     "klasa": "github:dirigeants/klasa",
     "discord.js": "github:discordjs/discord.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "ytdl-core": "^0.21.1"
   },
   "repository": "https://github.com/Tylertron1998/klasa-music-plugin"
