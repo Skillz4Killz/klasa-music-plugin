@@ -1,5 +1,8 @@
 const { Client: { plugin } } = require('klasa');
 
+// Add the guild schemas
+require(`${__dirname}/lib/schemas/guilds`);
+
 module.exports = {
 	Client: require('./lib/Client.js'),
 	MusicGuild: require('./lib/extentions/Guild'),
