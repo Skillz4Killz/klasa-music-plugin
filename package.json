@@ -8,9 +8,9 @@
   },
   "author": "tylertron",
   "license": "ISC",
-  "dependencies": {
-    "discord.js": "github:discordjs/discord.js",
-    "klasa": "github:dirigeants/klasa"
+  "peerDependencies": {
+    "klasa": "github:dirigeants/klasa",
+    "discord.js": "github:discordjs/discord.js"
   },
   "devDependencies": {
     "ytdl-core": "^0.21.1"
